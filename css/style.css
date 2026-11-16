@@ -1,0 +1,327 @@
+
+/* =================================
+   1. CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #FFF3D9;
+    color: #244D46;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   2. MENU DE NAVEGAÇÃO
+================================= */
+
+.navbar {
+    background-color: #FFF3D9;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #087F70;
+}
+
+.navbar-brand span {
+    color: #FF796C;
+}
+
+.nav-link {
+    color: #087F70;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #FF796C;
+    transform: translateY(-3px);
+}
+
+.navbar-toggler {
+    border-color: #087F70;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* =================================
+   3. PÁGINA INICIAL
+================================= */
+
+.inicio {
+    padding: 100px 0;
+    background-color: #FFF3D9;
+}
+
+.subtitulo {
+    color: #FF796C;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.inicio h1 {
+    color: #087F70;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.descricao {
+    color: #526B61;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-projetos {
+    background-color: #35BFA3;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-projetos:hover {
+    background-color: #087F70;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.mascote {
+    max-width: 100%;
+    width: 420px;
+    transition: 0.4s;
+}
+
+.mascote:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+
+/* =================================
+   4. SEÇÕES GERAIS
+================================= */
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    color: #087F70;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 17px;
+}
+
+
+/* =================================
+   5. PERFIL
+================================= */
+
+.perfil {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.perfil p {
+    max-width: 750px;
+    margin: auto;
+    color: #526B61;
+}
+
+
+/* =================================
+   6. PROJETOS
+================================= */
+
+.projetos {
+    background-color: #FFF3D9;
+    text-align: center;
+}
+
+.projeto-card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    min-height: 190px;
+    box-shadow: 0 5px 15px rgba(8, 127, 112, 0.10);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(8, 127, 112, 0.20);
+}
+
+.projeto-card h3 {
+    color: #087F70;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.projeto-card p {
+    color: #526B61;
+}
+
+
+/* =================================
+   7. HABILIDADES
+================================= */
+
+.habilidades {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.habilidade-item {
+    background-color: #35BFA3;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.habilidade-item:hover {
+    background-color: #FF796C;
+    transform: scale(1.06);
+}
+
+
+/* =================================
+   8. CONTATO
+================================= */
+
+.contato {
+    background-color: #087F70;
+    text-align: center;
+    color: white;
+}
+
+.contato h2 {
+    color: #FFFFFF;
+}
+
+.contato p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.btn-contato {
+    background-color: #FFC857;
+    color: #244D46;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #FF796C;
+    color: white;
+    transform: translateY(-4px);
+}
+
+
+/* =================================
+   9. RODAPÉ
+================================= */
+
+.rodape {
+    background-color: #075D53;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =================================
+   10. RESPONSIVIDADE
+================================= */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+    .mascote {
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+}
+.tecnologia {
+    display: inline-block;
+    background-color: #FFF3D9;
+    color: #087F70;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.link-projeto {
+    display: block;
+    color: #FF796C;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.link-projeto:hover {
+    color: #087F70;
+}
